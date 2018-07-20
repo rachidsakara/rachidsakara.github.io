@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<header class="header">
+    <div class="container">
+        <h1 class="header-heading">{{ site.title }}</h1>
+        <div class="header-description">
+            <p>Developer for web and mobile applications, member of <a href="https://tutsplus.com/authors/rachid-sakara" target="_blank">Tuts+</a> translation team but for the meantime, I'm starting a whole brand new career as freelance writer, wish me luck!</p>
+        </div>
+        {% include social-links.html %}
+    </div>
+</header>
+
+{% include newsletter.html %}
+
+<section class="post-list">
+    <div class="container">
+        <h2 class="post-list-heading">Articles</h2>
+        <section class="post-list-group">
+            <h3 class="post-list-title">2018</h3>
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</section>
