@@ -1,30 +1,240 @@
 ---
 layout: default
 ---
-<header class="header">
+
+<section class="section">
     <div class="container">
-        <h1 class="header-heading">{{ site.title }}</h1>
-        <div class="header-description">
-            <p>Developer for web and mobile applications, member of <a href="https://tutsplus.com/authors/rachid-sakara" target="_blank">Tuts+</a> translation team but for the meantime, I'm starting a whole brand new career as freelance writer, wish me luck!</p>
+          <div class="box">
+            <article class="media">
+                <div class="media-left">
+                <figure class="image is-128x128">
+                    <img src="{{ 'images/avatar.png' | absolute_url }}" alt="Rachid Sakara" class="profile">
+                </figure>
+                </div>
+                <div class="media-content">
+                <div class="content">
+                    <p>
+                    <strong>{{ site.title }}</strong>
+                    <br>
+                    Developer for web and mobile applications and member of <a class="button is-small is-link is-rounded" href="https://tutsplus.com/authors/rachid-sakara" target="_blank">Tuts+</a> translation team. In the meantime, I'm starting a whole brand new career as freelance writer. Hopefully things go well this time! 
+                    </p>
+                    <p>
+                            Also the founder of <a class="button is-small is-link is-rounded" href="https://world-headlines.herokuapp.com/" target="_blank">World Headlines</a> website which was built using Python Framework called Django.
+                    </p>
+                </div>
+                </div>
+            </article>
+           </div>
+       </div>
+
+       <br>
+
+       <div class="container">
+                <section class="info-tiles">
+                    <div class="tile is-ancestor has-text-centered">
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">Website</p>
+                                <p class="subtitle">
+                                    <a class="button is-rounded is-primary" href="https://world-headlines.herokuapp.com/" target="_blank">
+                                      View
+                                    </a>
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">T-Shirt Store</p>
+                                <p class="subtitle">
+                                    <a class="button is-rounded is-primary" href="https://teespring.com/stores/shop-shirts" target="_blank">
+                                      View
+                                    </a>
+                                </p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">Medium Blog</p>
+                                <p class="subtitle">
+                                    <a class="button is-rounded is-primary" href="https://medium.com/@rachidsakara" target="_blank">
+                                      View
+                                    </a>
+                                </p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">Arabic Blog</p>
+                                <p class="subtitle">
+                                    <a class="button is-rounded is-primary" href="http://wd-digital.blogspot.com/" target="_blank">
+                                      View
+                                    </a>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <hr>
+                <h1 class="title">Articles</h1>
+                <hr>
+                <div class="columns articles">
+                    <div class="column is-6">
+                        <div class="card events-card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Content Management System
+                                </p>
+                                  <span class="icon has-text-info">
+                                    <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                  </span>
+
+                            </header>
+                            <div class="card-table">
+                                <div class="content">
+                                    <table class="table is-fullwidth is-striped">
+                                        <tbody>
+                                           {% for post in site.posts %}
+                                            <tr>
+                                                <td width="5%">
+                                                    <span class="icon has-text-success">
+                                                     <i class="fas fa-book"></i>
+                                                    </span>
+                                                </td>
+                                                <td>{{ post.title }}</td>
+                                                <td><a class="button is-small is-danger" href="{{ post.url | prepend: site.baseurl }}">Open</a></td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <br>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="column is-6">
+                        <div class="card events-card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Front-End Development
+                                </p>
+                    
+                                  <span class="icon has-text-info">
+                                    <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                  </span>
+                            
+                            </header>
+                            <div class="card-table">
+                                <div class="content">
+                                    <table class="table is-fullwidth is-striped">
+                                        <tbody>
+                                           {% for post in site.posts %}
+                                            <tr>
+                                                <td width="5%">
+                                                    <span class="icon has-text-success">
+                                                     <i class="fas fa-book"></i>
+                                                    </span>
+                                                </td>
+                                                <td>Build a News Application with Angular 6 & Material Design</td>
+                                                <td><a class="button is-small is-danger" href="https://medium.com/@rachidsakara/build-a-news-application-with-angular-6-and-material-design-78fe5583e13d" target="_blank">Open</a></td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <br>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <h1 class="title">
+                  Certifications
+                </h1>
+                <hr>
+
+                 <div class="columns articles">
+                    <div class="column is-6">
+                        <div class="card events-card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Digital Marketing
+                                </p>
+                                  <span class="icon has-text-success">
+                                    <i class="fas fa-certificate" aria-hidden="true"></i>
+                                  </span>
+                            </header>
+                            <div class="card-table">
+                                <div class="content">
+                                    <table class="table is-fullwidth is-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td width="8%">
+                                                    <span class="icon has-text-success">
+                                                     <i class="fas fa-book"></i>
+                                                    </span>
+                                                </td>
+                                                <td>The Online Marketing Fundamentals From Google</td>
+                                                <td><a class="button is-small is-danger" href="https://drive.google.com/open?id=1kOBiCnUGtmarVEPMWGZ-cMsFJql4JWpT" target="_blank">Open</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <br>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="column is-6">
+                        <div class="card events-card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Python Security
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                                  <span class="icon icon has-text-success">
+                                    <i class="fas fa-certificate" aria-hidden="true"></i>
+                                  </span>
+                                </a>
+                            </header>
+                            <div class="card-table">
+                                <div class="content">
+                                    <table class="table is-fullwidth is-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td width="5%">
+                                                    <span class="icon has-text-success">
+                                                     <i class="fas fa-book"></i>
+                                                    </span>
+                                                </td>
+                                                <td>Python for Security Professionals From Cybrary</td>
+                                                <td><a class="button is-small is-danger" href="https://drive.google.com/open?id=10b193q5Q5LORnBDFokZhQNLHM_VmZ8he" target="_blank">Open</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <br>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
-        {% include social-links.html %}
     </div>
-</header>
 
-{% include newsletter.html %}
-
-<section class="post-list">
-    <div class="container">
-        <h2 class="post-list-heading">Articles</h2>
-        <section class="post-list-group">
-            <h3 class="post-list-title">2018</h3>
-            <ul>
-                {% for post in site.posts %}
-                <li>
-                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
-    </div>
 </section>
+<br>

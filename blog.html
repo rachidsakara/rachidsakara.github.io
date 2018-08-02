@@ -1,20 +1,75 @@
 ---
-layout: default
+layout: blog
 ---
-<section class="post-list">
-    <div class="container">
-        <h2 class="post-list-heading">Articles</h2>
-        <section class="post-list-group">
-            <h3 class="post-list-title">2018</h3>
-            <ul>
-                {% for post in site.posts %}
-                <li>
-                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
-    </div>
+
+
+<section class="hero is-info is-medium is-bold">
+        <div class="hero-body hero-bd">
+            <div class="container has-text-centered">
+                
+                <h1 class="title">"If you don't pay the price for success, you'll pay pay the price for failure"</h1>
+                <h1>This quote has changed my life forever. My only question is, will it be yours?</h1>
+
+            </div>
+        </div>
 </section>
 
-{% include newsletter.html %}
+<div class="container">
+        <!-- START ARTICLE FEED -->
+        <section class="articles">
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+
+                            <div class="media-center">
+                                <img src="{{ 'images/avatar.png' | absolute_url }}" class="author-image" alt="Placeholder image">
+                            </div>
+
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title"><a href="https://medium.com/@rachidsakara/build-a-news-application-with-angular-6-and-material-design-78fe5583e13d">Build a News Application with Angular 6 & Material Design</a></p>
+                                <div class="tags has-addons level-item">
+                                    <span class="tag is-rounded is-info"><a href="https://twitter.com/rachid_sakara" target="_blank">@rachid_sakara</a></span>
+                                    <span class="tag is-rounded">July 21, 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>In this tutorial you’ll go through the process of building a news application with the <a href="https://angular.io/" target="_blank">Angular 6</a> and <a href="https://material.angular.io/" target="_blank">Google's Material Design</a>, some showcases of Material Design implementation which will certainly help you make your future applications with Angular looks fascinating for both web browsers and mobile devices. </p>
+                            <p>Just for the record, the source code for this tutorial is available on <a href="https://github.com/rachidsakara/angular-news-application-with-material" target="_blank">GitHub</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+                 <!-- START ARTICLE -->
+                {% for post in site.posts %}
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+
+                                <p class="title article-title"> <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} 🔱 </a></p>
+
+                                 <div class="tags has-addons level-item">
+                                    <span class="tag is-rounded is-info">Jekyll Team</span>
+                                    <span class="tag is-rounded">July 19, 2018</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>
+                                You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">`jekyll serve`</code>, which launches a web server and auto-regenerates your site when a file is updated.
+                            </p>
+                            <p>
+                                To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- END ARTICLE -->
+        </section>
+        <!-- END ARTICLE FEED -->
+        </div>

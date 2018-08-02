@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    {% include blog-head.html %}
+<body>
+        {% include header.html %}
+           {{ content }}
+        {% include footer.html %}
+
+        <script async type="text/javascript" src="{{ '/css/app.bulma.js' | prepend: site.baseurl }}"></script>
+
+        
+</body>
+</html>
