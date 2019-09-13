@@ -16,10 +16,10 @@ layout: default
                      <p>
                     <strong>{{ site.title }}</strong>
                      <br>
-                        Developer for web and mobile applications, author at <a class="button is-small is-link is-rounded" href="https://www.smashingmagazine.com/author/rachid-sakara/" target="_blank">Smashing Magazine</a> and member of <a class="button is-small is-link is-rounded" href="https://tutsplus.com/authors/rachid-sakara" target="_blank">Tuts+</a> translation team. In the meantime, I'm starting a whole brand new career as freelance writer. 
+                        Developer for web and mobile applications, author at <a class="button is-small is-link is-rounded" href="https://www.smashingmagazine.com/author/rachid-sakara/" target="_blank">Smashing Magazine</a> and member of <a class="button is-small is-success is-rounded" href="https://tutsplus.com/authors/rachid-sakara" target="_blank">Tuts+</a> translation team. In the meantime, I'm starting a whole brand new career as freelance writer. 
                     </p>
                     <p>
-                            Also the founder of <a class="button is-small is-link is-rounded" href="https://world-headlines.herokuapp.com/" target="_blank">World Headlines</a> website which was built using Python Framework called Django.
+                            Also the founder of <a class="button is-small is-link is-rounded" href="https://world-headlines.herokuapp.com/" target="_blank">World Headlines</a> website which was built using Python Framework called Django. For more projects check out my <a class="button is-small is-danger is-rounded" href="https://github.com/rachidsakara" target="_blank">GitHub Account</a>.
                     </p>
                 </div>
                 </div>
@@ -77,85 +77,302 @@ layout: default
                 </section>
                 <br>
                 <hr>
-                <h1 class="title">Articles</h1>
+                <h1 class="title has-text-centered">Online Articles</h1>
                 <hr>
                 <div class="columns articles">
-                    <div class="column is-6">
-                        <div class="card events-card">
-                            <header class="card-header">
-                                <p class="card-header-title">
-                                    Content Management System
-                                </p>
-                                  <span class="icon has-text-info">
-                                    <i class="fas fa-newspaper" aria-hidden="true"></i>
-                                  </span>
-
-                            </header>
-                            <div class="card-table">
-                                <div class="content">
-                                    <table class="table is-fullwidth is-striped">
-                                        <tbody>
-                                           {% for post in site.posts %}
-                                            <tr>
-                                                <td width="5%">
-                                                    <span class="icon has-text-success">
-                                                     <i class="fas fa-book"></i>
-                                                    </span>
-                                                </td>
-                                                <td>{{ post.title }}</td>
-                                                <td><a class="button is-small is-danger" href="{{ post.url | prepend: site.baseurl }}">Open</a></td>
-                                            </tr>
-                                            {% endfor %}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <footer class="card-footer">
-                                <br>
-                            </footer>
-                        </div>
-                    </div>
-
-                    <div class="column is-6">
-                        <div class="card events-card">
-                            <header class="card-header">
-                                <p class="card-header-title">
-                                    Front-End Development
-                                </p>
                     
-                                  <span class="icon has-text-info">
-                                    <i class="fas fa-newspaper" aria-hidden="true"></i>
-                                  </span>
+                        <div class="column is-6">
+                                <div class="card events-card">
+                                    <header class="card-header">
+                                        <p class="card-header-title">
+                                            Smashing Magazine
+                                        </p>
                             
-                            </header>
-                            <div class="card-table">
-                                <div class="content">
-                                    <table class="table is-fullwidth is-striped">
-                                        <tbody>
-                                           {% for post in site.posts %}
-                                            <tr>
-                                                <td width="5%">
-                                                    <span class="icon has-text-success">
-                                                     <i class="fas fa-book"></i>
-                                                    </span>
-                                                </td>
-                                                <td>Introduction to Onsen UI Framework for Building ...</td>
-                                                <td><a class="button is-small is-danger" href="https://medium.com/@rachidsakara/introduction-to-onsen-ui-framework-for-building-hybrid-and-mobile-apps-4f0bff130fe0" target="_blank">Open</a></td>
-                                            </tr>
-                                            {% endfor %}
-                                        </tbody>
-                                    </table>
+                                          <span class="icon has-text-info">
+                                            <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                          </span>
+                                    
+                                    </header>
+                                    <div class="card-table">
+                                        <div class="content">
+                                            <table class="table is-fullwidth is-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="5%">
+                                                            <span class="icon has-text-success">
+                                                             <i class="fas fa-book"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>How To Build A News Application With Angular 6 And Material Design</td>
+                                                        <td><a class="button is-small is-danger" href="https://www.smashingmagazine.com/2018/10/news-application-with-angular-and-material-design/" target="_blank">Open</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <br>
+                                    </footer>
                                 </div>
                             </div>
-                            <footer class="card-footer">
-                                <br>
-                            </footer>
+
+                            
+                    <div class="column is-6">
+                            <div class="card events-card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        ButterCMS
+                                    </p>
+                        
+                                      <span class="icon has-text-info">
+                                        <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                      </span>
+                                
+                                </header>
+                                <div class="card-table">
+                                    <div class="content">
+                                        <table class="table is-fullwidth is-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="5%">
+                                                        <span class="icon has-text-success">
+                                                         <i class="fas fa-book"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>Building a Beautiful Animated News App with Vue.js and Vuetify</td>
+                                                    <td><a class="button is-small is-danger" href="https://buttercms.com/blog/build-a-beautiful-animated-news-app-with-vuejs-and-vuetify" target="_blank">Open</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <br>
+                                </footer>
+                            </div>
                         </div>
-                    </div>
                 </div>
 
+                <div class="columns articles">
+                        <div class="column is-6">
+                                <div class="card events-card">
+                                    <header class="card-header">
+                                        <p class="card-header-title">
+                                            Medium Blog
+                                        </p>
+                            
+                                          <span class="icon has-text-info">
+                                            <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                          </span>
+                                    
+                                    </header>
+                                    <div class="card-table">
+                                        <div class="content">
+                                            <table class="table is-fullwidth is-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="5%">
+                                                            <span class="icon has-text-success">
+                                                             <i class="fas fa-book"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>How to Deploy Vue.js Applications with Firebase Hosting</td>
+                                                        <td><a class="button is-small is-danger" href="https://medium.com/@rachidsakara/how-to-deploy-vue-js-applications-with-firebase-hosting-40cfa7f724e4" target="_blank">Open</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <br>
+                                    </footer>
+                                </div>
+                            </div>
+    
+    
+                            
+                        <div class="column is-6">
+                                <div class="card events-card">
+                                    <header class="card-header">
+                                        <p class="card-header-title">
+                                            Medium Blog
+                                        </p>
+                            
+                                          <span class="icon has-text-info">
+                                            <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                          </span>
+                                    
+                                    </header>
+                                    <div class="card-table">
+                                        <div class="content">
+                                            <table class="table is-fullwidth is-striped">
+                                                <tbody>
+                                                   <tr>
+                                                        <td width="5%">
+                                                            <span class="icon has-text-success">
+                                                             <i class="fas fa-book"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>Building a Cryptocurrency App with Vue.js and CryptoCompare API</td>
+                                                        <td><a class="button is-small is-danger" href="https://medium.com/@rachidsakara/building-a-cryptocurrency-app-with-vue-js-and-cryptocompare-api-14231af6f099" target="_blank">Open</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <br>
+                                    </footer>
+                                </div>
+                            </div>    
+                </div>
+
+                <div class="columns articles">
+                    <div class="column is-6">
+                            <div class="card events-card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        Medium Blog
+                                    </p>
+                        
+                                        <span class="icon has-text-info">
+                                        <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                        </span>
+                                
+                                </header>
+                                <div class="card-table">
+                                    <div class="content">
+                                        <table class="table is-fullwidth is-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="5%">
+                                                        <span class="icon has-text-success">
+                                                            <i class="fas fa-book"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>Introduction to Onsen UI Framework for Building Hybrid and Mobile Apps</td>
+                                                    <td><a class="button is-small is-danger" href="https://medium.com/@rachidsakara/introduction-to-onsen-ui-framework-for-building-hybrid-and-mobile-apps-4f0bff130fe0" target="_blank">Open</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <br>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="column is-6">
+                                <div class="card events-card">
+                                    <header class="card-header">
+                                        <p class="card-header-title">
+                                            Medium Blog
+                                        </p>
+                            
+                                            <span class="icon has-text-info">
+                                            <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                            </span>
+                                    
+                                    </header>
+                                    <div class="card-table">
+                                        <div class="content">
+                                            <table class="table is-fullwidth is-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="5%">
+                                                            <span class="icon has-text-success">
+                                                                <i class="fas fa-book"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>Mel Robbins 25 Quotes That Will Inspire You To Change Your life</td>
+                                                        <td><a class="button is-small is-danger" href="https://medium.com/@rachidsakara/mel-robbins-25-quotes-that-will-inspire-you-to-change-your-life-2eccdb3a2f8b" target="_blank">Open</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <br>
+                                    </footer>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="columns articles">
+                        <div class="column is-6">
+                                <div class="card events-card">
+                                    <header class="card-header">
+                                        <p class="card-header-title">
+                                            Medium Blog
+                                        </p>
+                            
+                                            <span class="icon has-text-info">
+                                            <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                            </span>
+                                    
+                                    </header>
+                                    <div class="card-table">
+                                        <div class="content">
+                                            <table class="table is-fullwidth is-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="5%">
+                                                            <span class="icon has-text-success">
+                                                                <i class="fas fa-book"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>30 Powerful Quotes about Leadership</td>
+                                                        <td><a class="button is-small is-danger" href="https://medium.com/@rachidsakara/30-powerful-quotes-about-leadership-b6c5a2f1aa22" target="_blank">Open</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <br>
+                                    </footer>
+                                </div>
+                            </div>
+    
+                            <div class="column is-6">
+                                    <div class="card events-card">
+                                        <header class="card-header">
+                                            <p class="card-header-title">
+                                                Medium Blog
+                                            </p>
+                                
+                                                <span class="icon has-text-info">
+                                                <i class="fas fa-newspaper" aria-hidden="true"></i>
+                                                </span>
+                                        
+                                        </header>
+                                        <div class="card-table">
+                                            <div class="content">
+                                                <table class="table is-fullwidth is-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="5%">
+                                                                <span class="icon has-text-success">
+                                                                    <i class="fas fa-book"></i>
+                                                                </span>
+                                                            </td>
+                                                            <td>6 Reasons Why Your Dreams is Never Coming True</td>
+                                                            <td><a class="button is-small is-danger" href="https://medium.com/@rachidsakara/6-reasons-why-your-dreams-is-never-coming-true-edca89c5eb55" target="_blank">Open</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <footer class="card-footer">
+                                            <br>
+                                        </footer>
+                                    </div>
+                                </div>
+                    </div>
+
                 <hr>
-                <h1 class="title">
+                <h1 class="title has-text-centered">
                   Certifications
                 </h1>
                 <hr>
@@ -230,10 +447,52 @@ layout: default
                     </div>
                 </div>
 
-
-
             </div>
         </div>
+
+        <br>
+        <hr>
+            <h1 class="title has-text-centered">
+            Languages
+            </h1>
+        <hr>
+
+        <section class="info-tiles">
+                <div class="tile is-ancestor has-text-centered">
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <p class="title">Arabic</p>
+                            <p class="subtitle">
+                                <label class="button is-warning is-primary">
+                                    Native Language
+                                </label>
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <p class="title">French</p>
+                            <p class="subtitle">
+                                <label class="button is-warning is-primary">
+                                        Advanced
+                                </label>
+                            </p>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <p class="title">English</p>
+                            <p class="subtitle">
+                                <label class="button is-warning is-primary">
+                                  Fluent
+                                </label>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
     </div>
 
 </section>
