@@ -15,4 +15,8 @@ html,body{
 .body-title{
   color: white !important;
 }
-    
+
+.navbar-item {
+  display: flex;
+}
+
